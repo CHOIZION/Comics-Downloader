@@ -91,18 +91,18 @@ async function scrapeImagesSequentially(baseUrl, chapterStart = 1, chapterEnd = 
           }
 
           chapterFound = true;
-          break; // 유효한 페이지를 찾으면 다음 변형으로 넘어갑니다.
+          break; 
         }
       }
 
-      await page.close(); // 현재 페이지를 닫고 다음 변형을 시도합니다.
+      await page.close(); 
     }
 
     
 
     if (!chapterFound) {
       console.log(`No valid pages found for chapter ${currentChapter}, stopping search.`);
-      break; // 유효한 챕터를 찾지 못하면 검색을 중단합니다.
+      break; 
     }
   }
 
