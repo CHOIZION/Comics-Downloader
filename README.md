@@ -28,4 +28,4 @@
 
 Node.js
 
-Write the URL in BaseUrl
+BaseUrl 칸에 URL을 작성하면 됩니다.
